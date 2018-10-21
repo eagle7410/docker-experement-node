@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: npm run up
+    volumes:
+    - .:/usr/app/
+    - ./public:/usr/app/public
+    - /usr/app/node_modules
+    ports:
+    - "6060:6060"
+    - "9856:9856"  # Hot front reload
+
+
