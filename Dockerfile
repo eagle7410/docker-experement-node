@@ -6,4 +6,4 @@ ADD . .
 RUN npm i npm@latest -g && npm install nodemon -g && npm install
 
 EXPOSE 6060
-CMD [ "npm", "rum", "up" ]
+CMD [ "npm", "run", "up" ]
